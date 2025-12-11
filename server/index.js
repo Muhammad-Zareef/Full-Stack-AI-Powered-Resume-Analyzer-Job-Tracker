@@ -29,6 +29,4 @@ app.use('/api', userRoutes);
 app.use('/api/resume', resumeRoutes);
 app.use('/api', jobRoutes);
 
-app.listen(PORT, () => {
-    console.log("Server running");
-});
+module.exports = app;
