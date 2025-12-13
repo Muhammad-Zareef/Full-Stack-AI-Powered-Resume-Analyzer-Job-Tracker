@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function checkAuth() {
     try {
-        const res = await axios.get("http://localhost:3000/api/resume/auth", { withCredentials: true });
+        const res = await axios.get("https://ai-powered-resume-analyzer-job-tracker-backend-oseovqy22.vercel.app/api/resume/auth", { withCredentials: true });
         if (res.data.status === 200) {
             window.location.href = "./home/index.html";
         }
